@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>LATA - Project Description</title>
+  <base href="../index.html">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .image-b1 {
+      background-image: url('images/e-bookstore-background.jpeg');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100 image-b1">
+  <div id="bootstrap_css"></div>
+  <div id="nav_bar"></div>
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+    <header class="text-center py-5">
+      <div class="logo-title centered-div">
+        <img src="images/logo-color-transparent.png" alt="LATA Logo" class="img-fluid">
+        <h1 class="text-white display-2">E-Book Store</h1>
+      </div>
+    </header>
+    <div class="spacer"></div>
+  </div>
+  <main class="flex-fill bg-body pt-4">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="images/e-bookstore-flavor.jpeg" alt="Image Description" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-center text-md-start">The Project</h2>
+          <span class="text-start text-md-end">
+            Our project consists of building a microservices-based e-commerce platform that allows users to create a
+            profile, browse products, add them to the cart, and place orders. The platform will consist of several
+            microservices, each responsible for a specific functionality. Together, all will come together to create a
+            pristine electronic bookstore for all to use. It is our mission at LATA to deliver the best for our users.
+          </span>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <h2 class="text-center">Modules</h2>
+      </div>
+      <div class="row mb-2">
+        <ul class="nav nav-tabs nav-justified" id="module_tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="product-tab" data-bs-toggle="tab" data-bs-target="#product_service"
+              type="button" role="tab">Product Service</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="cart-tab" data-bs-toggle="tab" data-bs-target="#cart_serivce" type="button"
+              role="tab">Cart Service</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="order-tab" data-bs-toggle="tab" data-bs-target="#order_service" type="button"
+              role="tab">Order Service</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="product-tab" data-bs-toggle="tab" data-bs-target="#user_service" type="button"
+              role="tab">User Service</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="cart-tab" data-bs-toggle="tab" data-bs-target="#notification_serivce"
+              type="button" role="tab">Notification Serivce</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="order-tab" data-bs-toggle="tab" data-bs-target="#frontend_service"
+              type="button" role="tab">Frontend Service</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="product_service" role="tabpanel">
+            The product service is responsible for managing product information. Stores product details such as name,
+            description, price, and availability. Provides APIs to list all products, retrieve product details, and
+            check availability.
+          </div>
+          <div class="tab-pane fade" id="cart_serivce" role="tabpanel">
+            The cart service manages user shopping carts. Allows users to add, remove, and update products in their
+            carts. Calculates the total price of items in the cart.
+          </div>
+          <div class="tab-pane fade" id="order_service" role="tabpanel">
+            The order service handles order creation and management. Collects user information, cart contents, and
+            calculates order total. Generates an order ID and handles payment processing.
+          </div>
+          <div class="tab-pane fade" id="user_service" role="tabpanel">
+            The user user service manages user information and authentication. Stores user data like name, address, and
+            payment information. Provides registration, login, and authentication functionality.
+          </div>
+          <div class="tab-pane fade" id="notification_serivce" role="tabpanel">
+            The notification service handles various notifications to users. Sends confirmation emails after order
+            placement. Sends alerts for successful registrations, order status updates, & etc.
+          </div>
+          <div class="tab-pane fade" id="frontend_service" role="tabpanel">
+            The frontend service provides a frontend interface for users to interact with the microservices.
+            Communicates with the other services through APIs Responsive or adjusts to other devices.
+          </div>
+        </div>
+        <div class="small-spacer"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-body">
+    <div class="row text-center footer-copyright">
+      <p class="text-muted">&copy; 2023 Team LATA. MIT License</p>
+    </div>
+  </footer>
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <img src="images/up-arrow.png" />
+  </button>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
